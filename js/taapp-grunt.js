@@ -87,7 +87,7 @@ app.Item = function Item(opts){
   this.getting = options.getting;
   this.sightDescription = options.sightDescription;
   this.visualSecret = options.visualSecret;
-  this.visualSecretThreshold = options.visualSecretThreshold || 8;
+  this.visualSecretThreshold = options.visualSecretThreshold || 8;// change this to visibility hash invisible:0, hidden:5, obvious at a glance: 10
   this.sounds = options.sounds;
   this.tastes = options.tastes;
   this.smells = options.smells;
@@ -516,9 +516,9 @@ app.Room.prototype = new app.Item({
     });
     items.sword = new app.Item({
       descriptor : ["sword"],
-      getting : "You pick up the blade and are amazed at how light it feels.",
-      sightDescription : "It's the most badass thing you have ever laid your eyes on!",
-      sounds : "Tilting your ear toward it, you can almost hear the whispers and cries of those that fell before it"
+      getting : "You pick up the sword.",
+      sightDescription : "The blade is pitted with age.",
+      touch: "You carefully rub your thumb across different points on the blade. It would benefit from a good sharpening."
     });
     //Create Room Object passing descriptions and items in
     var currentRoom = new app.Room({

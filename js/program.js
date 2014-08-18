@@ -66,9 +66,9 @@
     });
     items.sword = new app.Item({
       descriptor : ["sword"],
-      getting : "You pick up the blade and are amazed at how light it feels.",
-      sightDescription : "It's the most badass thing you have ever laid your eyes on!",
-      sounds : "Tilting your ear toward it, you can almost hear the whispers and cries of those that fell before it"
+      getting : "You pick up the sword.",
+      sightDescription : "The blade is pitted with age.",
+      touch: "You carefully rub your thumb across different points on the blade. It would benefit from a good sharpening."
     });
     //Create Room Object passing descriptions and items in
     var currentRoom = new app.Room({
