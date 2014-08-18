@@ -1,0 +1,116 @@
+
+/*import fonts*/
+@import url(http://fonts.googleapis.com/css?family=Cousine);
+
+@font-face
+{
+font-family: Atreyu;
+src: url('../fonts/Atreyu.otf');
+}
+@font-face
+{
+font-family: saturnV;
+src: url('../fonts/SaturnV.otf');
+}
+@font-face
+{
+font-family: Venera;
+src: url('../fonts/Venera-100.otf');
+}
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+::selection {
+  background: #b16828; /* Safari */
+  }
+::-moz-selection {
+  background: #b16828; /* Firefox */
+}
+
+
+html{
+  width:100%;
+  min-height: 100%;
+  background: url('../img/bkgd.gif') 360px 0;
+  box-shadow: inset 0 0 100px hsla(0,0%,0%,.25);
+  font: normal 14/1.5em sans-serif;
+}
+body{
+  text-align: center;
+  margin:0;
+  padding: 10% 0 0 0;
+  color:#cec5b1;
+}
+.verb_hint{
+  color:#58150f;
+}
+.noun_hint{
+  color:#144c6e;
+}
+p{
+  padding-right:10%;
+}
+h1{
+  font-family: 'Venera' serif;
+  font-size: 1.4em;
+  //text-transform: lowercase;
+  margin-bottom:0;
+  font-weight: 100;
+
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #6c634d;
+    font-style: italic;
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #6c634d;
+    font-style: italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #6c634d;
+    font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #6c634d;
+    font-style: italic;
+}
+.container{
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+}
+.gateway{
+  text-align: left;
+  margin:0 20px;
+}
+.readout{
+  border-radius: 3px;
+  position: relative;
+  font: normal .8em/1.5em 'Cousine', sans-serif;
+  color:#424242;
+  height: 320px;
+  overflow-y:scroll;
+  margin:0 0 5px;
+  padding:1.4em;
+  background-color: #cec5b1;
+  box-shadow: inset -4px -4px 80px hsla(0,0%,0%,.8);
+}
+.readout-content{
+  position: absolute;
+}
+span.terminal{
+  width:5%;
+}
+input{
+  color:#cec5b1;
+  font: normal 1em/1.5em 'Cousine', sans-serif;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+input:not([type=submit]):not([type=file]) {
+  width:95%;
+  padding:.4em;
+  background: none;
+  border:none;
+}

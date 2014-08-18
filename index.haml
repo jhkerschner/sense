@@ -1,0 +1,23 @@
+!!! 5
+%html
+  %head
+    %title= "Sense"
+    %meta{ content: "A text adventure for your senses", name: "description" }
+    %meta{ content: "John Woolschlager", name: "author" }
+    %link{ href: "css/style.css", media: "screen", rel: "stylesheet" }
+  %body
+    .container
+      #gateway.gateway
+        %h1= "Sense"
+        #readout.readout
+          #readout-content.readout-content
+            %p 
+              You awake. A slow even dripping noise can be heard nearby. Everything is dark and you rub your eyes, wondering if you have gone blind.
+            %p
+              %em
+                All you have are your senses try to use them. ex: look,listen,taste,touch. They will give you hints as to the actions you can perform.
+        .user-input
+          %span.terminal= ">"
+          %input{type: "text", id: "text-input", placeholder: "Action Item"}
+    %script{type: "text/javascript", src: "js/libs/jquery-2.0.3.js"}
+    %script{type: "text/javascript", src: "js/taapp-grunt.js"}
